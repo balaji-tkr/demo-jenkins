@@ -1,5 +1,5 @@
 
   @Library('demo-SL@master')_
-buildjob(result.displayname())
+buildjob(currentBuild.getResult()) 
 //evenOrOdd(currentBuild.getNumber())
 
