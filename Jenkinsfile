@@ -11,7 +11,7 @@ libraries {
 		//stage('build'){
 		//steps{
 		//	build 'demo2'
-		}
+		//}
 	     }
 	}
      }
