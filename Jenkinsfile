@@ -1,3 +1,5 @@
-@Library('demo-shared-L')_
+libraries {
+  lib('demo-SL@master')
 //buildjob(result.displayname())
 evenOrOdd(currentBuild.getNumber())
+}
