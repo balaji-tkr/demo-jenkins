@@ -1,5 +1,14 @@
 
   @Library('demo-SL@master')_
-buildjob(currentBuild.getResult()) 
+pipeline {
+   agent any 
+     stages {
+	stage('Demo'){
+	  steps {
+buildjob(currentBuild.getResult())
+    }
+  }
+     }
+}
 //evenOrOdd(currentBuild.getNumber())
 
