@@ -5,8 +5,8 @@ pipeline {
      stages {
 	stage('Demo'){
 	  steps {
-//buildjob(currentBuild.getResult())
-evenOrOdd(currentBuild.getNumber())
+buildjob(currentBuild.getResult())
+//evenOrOdd(currentBuild.getNumber())
 	  }
   }
      }
