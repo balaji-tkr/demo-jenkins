@@ -5,10 +5,11 @@ pipeline {
      stages {
 	stage('Demo'){
 	  steps {
-buildjob(currentBuild.getResult())
-    }
+//buildjob(currentBuild.getResult())
+evenOrOdd(currentBuild.getNumber())
+	  }
   }
      }
 }
-//evenOrOdd(currentBuild.getNumber())
+
 
