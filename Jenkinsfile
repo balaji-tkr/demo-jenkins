@@ -6,7 +6,11 @@ pipeline {
 	stage('Demo'){
 	  steps {
 buildjob(currentBuild.getResult())
-//evenOrOdd(currentBuild.getNumber())
+	  }
+	}
+	     stage('build'){
+		     steps{
+evenOrOdd(currentBuild.getNumber())
 	  }
   }
      }
