@@ -11,7 +11,6 @@ pipeline {
 evenOrOdd(currentBuild.getNumber())
   }
  }
-		}
 	}
 }
 }
