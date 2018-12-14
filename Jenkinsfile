@@ -7,7 +7,7 @@ pipeline {
    	stages {
 		stage('build'){
 			steps{
-				ansiColor('xterm') {
+				
 				evenOrOdd(currentBuild.getNumber())
   }
  }
