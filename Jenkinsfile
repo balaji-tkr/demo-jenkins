@@ -4,11 +4,11 @@
   //sh 'something that outputs ansi colored stuff'
 pipeline {
 	agent any
-	ansiColor('xterm') {
-     	stages {
+   	stages {
 		stage('build'){
 			steps{
-evenOrOdd(currentBuild.getNumber())
+				ansiColor('xterm') {
+				evenOrOdd(currentBuild.getNumber())
   }
  }
 	}
