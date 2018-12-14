@@ -3,9 +3,9 @@
 	//wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'xterm']) {
   //sh 'something that outputs ansi colored stuff'
 pipeline {
-	agent any 
+	agent any
+	ansiColor('xterm') {
      	stages {
-		ansiColor('xterm') {
 		stage('build'){
 			steps{
 evenOrOdd(currentBuild.getNumber())
