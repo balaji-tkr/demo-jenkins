@@ -3,8 +3,10 @@
 	//wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'xterm']) {
   //sh 'something that outputs ansi colored stuff'
 pipeline {
-	ansiColor('xterm') {
+	environment{
+		ansiColor('xterm') {
     	echo 'something that outputs ansi colored stuff'
+	}
 	}
    agent any 
      stages {
